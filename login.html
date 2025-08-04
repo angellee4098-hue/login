@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    
+</head>
+<style>
+body {
+    background-image: url(trybg1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.card{
+    width: 550px;
+    margin-left: 400px;
+    margin-top: 100px;
+    height: 450px;
+    border-color: black;
+    border-radius: 20px;
+    margin-bottom: 800px;
+
+}
+
+.ibox{
+   
+    width: 352px;
+    height: 352px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border: inset pink;
+    
+   
+
+}
+
+.form1{
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+
+    
+}
+
+.form2{
+    width: 300px;
+    margin-left: 20px;
+    
+}
+
+.input-container {
+      position: relative;
+      width: 330px;
+      margin-bottom: 25px;
+      margin-left: 4px;
+    }
+
+    .input-container img {
+      position: absolute;
+      right: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }   
+
+    .labas {
+      position: absolute;
+      margin-top: 70px;
+      margin-right: 150px;
+
+    }
+
+</style>
+<body>
+  <img src="logo.png" width="450px" class="labas">
+
+  
+  
+<div class="card">
+      <div class="ibox"> 
+        <h2 style="text-align: center;margin-top: 30px; font-family: Georgia, 'Times New Roman', Times, serif;"> Log In </h2>
+       <form target="_blank">
+        <div class="forms">
+            
+            
+           <input type="text" class="form1" placeholder="Email/Phone Number" required
+       style="border-radius: 20px; padding: 5px; border: 1px solid #1d1c1c; width: 90%; box-sizing: border-box;">
+
+       <div class="input-container">
+        <input type="password" class="form2" id="password" placeholder="Password"
+        style="border-radius: 20px; padding: 5px; border: 1px solid #1d1c1c; width: 90%; box-sizing: border-box;">
+        
+        <img src="password.png" id="toggleIcon" alt="Toggle Password" onclick="togglePassword()" style="left: 264px;">
+
+      </div>
+
+     <p style="font-size: small; margin-top: 12px;margin-left: 120px;"><a href="email.html" style="color: black; text-decoration: none;">Forgot Password?</a></p>
+    </p>
+       <button class="btn btn-primary" style="margin-left: 133px; font-family: Georgia, 'Times New Roman', Times, serif;">Submit!</button>
+       </form>
+        <p style="font-size: small; margin-left: 80px; margin-top: 25px;">Don't have an account? <a href="signup.html" style="color: blue; text-decoration: underline;">Sign Up</a></p>
+    
+    
+    </div>
+    </div>
+    </div>
+    
+    <script>
+        function togglePassword() {
+          const passwordField = document.getElementById("password");
+          const toggleIcon = document.getElementById("toggleIcon");
+    
+          if (passwordField.type === "password") {
+            passwordField.type = "text";
+            toggleIcon.src = "open-eyes.png";
+          } else {
+            passwordField.type = "password";
+            toggleIcon.src = "password.png"; 
+          }
+        }
+      </script>
+    
+</body>
+</html>
